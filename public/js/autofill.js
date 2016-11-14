@@ -8,7 +8,7 @@
     }
     var v, u, t, s = x.document, r = s.documentElement, q = s.querySelector('meta[name="viewport"]'), p = s.querySelector('meta[name="flexible"]');
     if (q) {
-        //console.warn("将根据已有的meta标签来设置缩放比�?");
+        //console.warn("灏嗘牴鎹凡鏈夌殑meta鏍囩鏉ヨ缃缉鏀炬瘮渚�");
         var o = q.getAttribute("content").match(/initial\-scale=(["']?)([\d\.]+)\1?/);
         o && (u = parseFloat(o[2]), v = parseInt(1 / u))
     } else {
@@ -37,5 +37,5 @@
         s.body.style.fontSize = 12 * v + "px"
     }, !1), w();
 }(window);
-//兼容cmd
+//鍏煎cmd
 typeof define !== 'undefined' && define('modules/autofull',function (require, exports, module) {});
