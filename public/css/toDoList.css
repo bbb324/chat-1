@@ -9,15 +9,16 @@ div#todolist{
     padding-top: 1px;
 }
 div input{
-    width: 11.6rem;
+    width: 10.9rem;
     line-height: 0.8rem;
 }
 div button{
-    min-width: 3.3rem;
-    height: 0.9rem;
+    min-width: 4rem;
+    height: 0.88rem;
     float: right;
     line-height: 1rem;
     padding: 0 1rem 0 1rem;
+    font-size: 0.5rem;
 }
 ul{
     margin: 0;
