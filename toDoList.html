@@ -3,8 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="public/css/toDoList.css"/>
+    <script src="public/js/vue.js"></script>
 </head>
 <body>
+    <div id="todolist">
+        <input v-model="input">
+        <button class="add" @click="add()">add</button>
+        <ul>
 
+            <template v-for="item in todolist" :todo="item">
+                <li id="{{ item.id }}" :class="{'end': !item.completed}">
+                    <!--<span  v-bind:class="{'end': !item.completed}">{{ item.title }}</span>-->{{ item.title }}
+                    <button @click="end(item)">{{ item.completed? 'Pending' : 'End'}}</button>
+                    <button @click="del(item)">Del</button>
+                </li>
+            </template>
+
+        </ul>
+    </div>
+    <script src="public/js/toDoList.js"></script>
 </body>
 </html>
