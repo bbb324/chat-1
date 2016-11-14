@@ -14,9 +14,8 @@ div input{
 }
 div button{
     min-width: 4rem;
-    height: 0.88rem;
     float: right;
-    line-height: 1rem;
+    line-height: 0.8rem;
     padding: 0 1rem 0 1rem;
     font-size: 0.5rem;
 }
@@ -30,10 +29,8 @@ li{
     border-bottom: 1px solid white;
 }
 li button{
-    line-height: 1rem;
-}
-li button{
-    line-height: 1rem;
+    line-height: 0.8rem;
+    margin-top: 0.05rem;
 }
 li.end{
     background-color: darksalmon;
