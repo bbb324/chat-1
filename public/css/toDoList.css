@@ -8,19 +8,16 @@ div#todolist{
     font-weight: bold;
     padding-top: 1px;
 }
-.add{
-    width:71px;
-    border-left: 1px solid white;
-}
 div input{
-    width:225px;
+    width: 14rem;
     line-height: 21px;
+    margin-bottom: 0.2rem;
 }
 div button{
-    width:70px;
+    width: 3.9rem;
+    height: 1.8rem;
     float: right;
-    line-height: 25px;
-    border: none;
+    line-height: 1.7rem;
 }
 ul{
     margin: 0;
@@ -28,15 +25,14 @@ ul{
     list-style-type:none;
 }
 li{
-    width:300px;
     line-height: 30px;
     border-bottom: 1px solid white;
 }
 li button{
     line-height: 28px;
 }
-li button:nth-child(2){
-    border-right: 1px solid white;
+li button{
+    line-height: 1.7rem;
 }
 li.end{
     background-color: darksalmon;

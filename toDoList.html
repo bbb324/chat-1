@@ -9,7 +9,7 @@
 <body>
     <div id="todolist">
         <input v-model="input">
-        <button class="add" @click="add()">add</button>
+        <button @click="add()">add</button>
         <ul>
 
             <template v-for="item in todolist" :todo="item">
