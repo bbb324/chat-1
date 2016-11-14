@@ -1,23 +1,22 @@
 div#todolist{
-    width:300px;
-    height:300px;
+    width: 15rem;
     background-color: silver;
     margin-left: auto;
     margin-right:auto;
     margin-top: 12%;
     font-weight: bold;
+    font-size: 0.5rem;
     padding-top: 1px;
 }
 div input{
-    width: 14rem;
-    line-height: 21px;
-    margin-bottom: 0.2rem;
+    width: 12.9rem;
+    line-height: 0.8rem;
 }
 div button{
-    width: 3.9rem;
-    height: 1.8rem;
+    width: 2rem;
+    height: 0.9rem;
     float: right;
-    line-height: 1.7rem;
+    line-height: 1rem;
 }
 ul{
     margin: 0;
@@ -25,14 +24,14 @@ ul{
     list-style-type:none;
 }
 li{
-    line-height: 30px;
+    line-height: 1rem;
     border-bottom: 1px solid white;
 }
 li button{
-    line-height: 28px;
+    line-height: 1rem;
 }
 li button{
-    line-height: 1.7rem;
+    line-height: 1rem;
 }
 li.end{
     background-color: darksalmon;

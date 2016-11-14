@@ -1,6 +1,3 @@
-/**
- * Created by jun on 2016/11/14.
- */
 !function(x) {
     function w() {
         var a = r.getBoundingClientRect().width;
@@ -8,7 +5,6 @@
     }
     var v, u, t, s = x.document, r = s.documentElement, q = s.querySelector('meta[name="viewport"]'), p = s.querySelector('meta[name="flexible"]');
     if (q) {
-        //console.warn("灏嗘牴鎹凡鏈夌殑meta鏍囩鏉ヨ缃缉鏀炬瘮渚�");
         var o = q.getAttribute("content").match(/initial\-scale=(["']?)([\d\.]+)\1?/);
         o && (u = parseFloat(o[2]), v = parseInt(1 / u))
     } else {
@@ -37,5 +33,5 @@
         s.body.style.fontSize = 12 * v + "px"
     }, !1), w();
 }(window);
-//鍏煎cmd
+//兼容cmd
 typeof define !== 'undefined' && define('modules/autofull',function (require, exports, module) {});
