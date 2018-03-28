@@ -19,7 +19,6 @@ var mongo = require('mongodb');  //使用mongodb
 
 var conn = mysql.createConnection(config.connectionMySQL);
 
-
 app.set('view engine', 'xtpl');  //因为 node_modules 中 express 是 view engin 而不是 views
 app.set('views', __dirname + '/views');
 
