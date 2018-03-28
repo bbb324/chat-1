@@ -30,7 +30,8 @@
     "underscore": "~1.6.0",
     "utils-merge": "~1.0.0",
     "superagent": "^0.20.0",
-    "co": "^4.6.0"
+    "co": "^4.6.0",
+    "puppeteer": "^1.0.0"
   },
   "homepage": "https://github.com/bbb324/chat#readme",
   "devDependencies": {

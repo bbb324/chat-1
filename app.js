@@ -18,7 +18,7 @@ var file = 'public/data/data.json';
 var mongo = require('mongodb');  //使用mongodb
 
 var conn = mysql.createConnection(config.connectionMySQL);
-
+var puppeteer = require('puppeteer');
 app.set('view engine', 'xtpl');  //因为 node_modules 中 express 是 view engin 而不是 views
 app.set('views', __dirname + '/views');
 
@@ -71,4 +71,12 @@ fs.writeFile('target.txt', fs.readFile('b.txt', function (err, data) {
   }) + '223', (err)=> {
   if (err)throw err;
   console.log('done3!')
+});
+
+puppeteer.launch().then(async browser => {
+  const page = await browser.newPage();
+  await page.goto('https://www.google.com');
+  await page.screenshot({path: '/Users/junxie/Downloads/ref.png'});
+  console.log('finish cut')
+  await browser.close();
 });
